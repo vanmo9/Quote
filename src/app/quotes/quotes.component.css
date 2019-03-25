@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: #666699;
+  background-color: white;
 }
 h1 {
   margin-left: 80px;
@@ -9,4 +9,7 @@ h1 {
 .mo {
   margin-left: 400px;
   font-size: 30px;
+}
+body{
+  background-color: #8585ad;
 }
