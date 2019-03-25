@@ -1,5 +1,6 @@
 import { Component, OnInit,  Output, EventEmitter } from '@angular/core';
 import {Quote} from '../quote';
+
 @Component({
   selector: 'app-quotes-form',
   templateUrl: './quotes-form.component.html',
