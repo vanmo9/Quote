@@ -15,6 +15,13 @@ export class QuotesDetailsComponent implements OnInit {
   downvote = 0;
   upvote = 0;
 
+  like() {
+    this.upvote = this.upvote + 1;
+  }
+  unlike() {
+    this.downvote = this.downvote + 1;
+  }
+
   quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }

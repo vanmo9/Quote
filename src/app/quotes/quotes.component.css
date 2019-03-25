@@ -2,5 +2,11 @@
   background-color: #666699;
 }
 h1 {
-  margin-left: 130px;
+  margin-left: 80px;
+  font-size: 60px;
+  font-style: italic;
+}
+.mo {
+  margin-left: 400px;
+  font-size: 30px;
 }
