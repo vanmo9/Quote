@@ -21,7 +21,7 @@ export class QuotesComponent implements OnInit {
 
   deleteQuote(isComplete, index) {
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.Quotes[index].name}`)
+      let toDelete = confirm(`Are you sure you want to delete ${this.Quotes[index].quote}`)
 
       if (toDelete) {
         this.Quotes.splice(index, 1)
@@ -30,7 +30,7 @@ export class QuotesComponent implements OnInit {
 
   }
 
-  
+
   addNewQuote(quote) {
     let quoteLength = this.Quotes.length;
     quote.id = quoteLength + 1;
