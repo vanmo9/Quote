@@ -7,18 +7,19 @@
       </div>
     </div>
   </div>
-
-  <div class="col-md-13">
-    <div class="" *ngFor="let quote of Quotes;let i = 'index'">
-
-
-      <h4 id="{{i}}">{{ quote.quote }}</h4>
+  <div class="jumbotron">
+    <div class="col-md-13">
+      <div class="" *ngFor="let quote of Quotes;let i = 'index'">
 
 
-      <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
-      <br><br>
-      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+        <h4 id="{{i}}">{{ quote.quote }}</h4>
 
+
+        <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
+        <br><br>
+        <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+
+      </div>
     </div>
   </div>
 
