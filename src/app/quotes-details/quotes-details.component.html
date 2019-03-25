@@ -1,0 +1,10 @@
+<p>This quote was written by {{quote.name}} on {{quote.writtenDate|date|uppercase}}</p>
+
+<br>
+<div>
+    <mdb-icon (click)="upvote=upvote+1" fas icon="thumbs-up" style='cursor:pointer; color:olive; font-size:1.5em; '></mdb-icon>
+    &nbsp;&nbsp; Good Quote: {{upvote}}
+    &nbsp;&nbsp;<mdb-icon (click)="downvote=downvote+1" fas icon="thumbs-down" style='cursor:pointer; color:red; font-size:1.5em;'></mdb-icon>
+ &nbsp;&nbsp; Bad Quote: {{downvote}}
+</div>
+<p><button class="btn btn-danger" (click) = 'quoteDelete(true)'> Delete Quote </button></p>
