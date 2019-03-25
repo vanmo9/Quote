@@ -1,23 +1,25 @@
-<div class="whole">
-<h1 id="heading">Quotes</h1>
-<div class="row">
-<div  class="col-md-6"><app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form></div>
+<div class="fifa">
+  <h1 id="heading">Quotes</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
+    </div>
 
 
 
-  <div class="col-md-6">
-    <div class="" *ngFor="let quote of Quotes;let i = 'index'">
+    <div class="col-md-6">
+      <div class="" *ngFor="let quote of Quotes;let i = 'index'">
 
 
-            <div class="">
-              <h4 id="{{i}}">{{ quote.quote }}</h4>
-            </div>
+        <div class="">
+          <h4 id="{{i}}">{{ quote.quote }}</h4>
+        </div>
 
-        <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
-    <br><br>
-    <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+        <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
+        <br><br>
+        <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
 
       </div>
-   </div>
+    </div>
   </div>
 </div>
