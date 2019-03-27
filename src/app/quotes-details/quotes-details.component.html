@@ -1,4 +1,7 @@
 <p>This quote was written on {{quote.writtenDate|date|uppercase}}</p>
+<!-- <h4>{{ quote.quote }}</h4> -->
+<h4>Author: {{quote.author}}</h4>
+<h4>published by: {{quote.publisher}}</h4>
 
 <br>
 <button id="like" type="button" name="button" (click)="like()">Like {{upvote}}</button>
