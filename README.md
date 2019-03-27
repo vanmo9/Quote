@@ -30,7 +30,7 @@ This is an angular web application that allows users to write Quotes, upvote or 
 
 ## Live Link
 
-        [Quotes](https://vanmo9.github.io/Quotes/)
+[Quotes](https://vanmo9.github.io/Quotes/)
 
 
 ## Further help
