@@ -1,9 +1,11 @@
-<p>This quote was written on {{quote.writtenDate|date|uppercase}}</p>
-<!-- <h4>{{ quote.quote }}</h4> -->
+<p>This quote was posted {{quote.completeDate|dateCount}} days ago</p>
+
+
 <h4>Author: {{quote.author}}</h4>
 <h4>published by: {{quote.publisher}}</h4>
 
 <br>
-<button id="like" type="button" name="button" (click)="like()">Like {{upvote}}</button>
-<button id="unlike" type="button" name="button" (click)="unlike()">Dis-Like {{downvote}}</button>
-<p><button class="btn btn-danger" (click)='quoteDelete(true)'> Delete </button></p>
+
+<i class="fa fa-thumbs-up" name="" (click)="like()" style="padding: 3%"> {{upvote}}</i>
+<i class="fa fa-thumbs-down" (click)="unlike()" style="padding: 3%" > {{downvote}}</i> <br><br>
+<i class="fa fa-trash" (click)='quoteDelete(true)' stle="padding: 3% "></i>

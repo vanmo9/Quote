@@ -1,12 +1,5 @@
-.jumbotron {
-  background-color: #8585ad;
-}
-h1 {
-  margin-left: 80px;
-  font-size: 60px;
-  font-style: italic;
-}
-.mo {
-  margin-left: 400px;
-  font-size: 30px;
+#heading {
+  padding-left: 400px;
+} .mo {
+  background-image: url(src/image/paris.jpg);
 }

@@ -1,41 +1,20 @@
-<div class="container">
-  <div class="jumbotron">
-    <div class="mo">
-      <h1 id="heading">Quotes</h1>
-      <!-- <div class="col-md-10"> -->
+<div class="mo">
+  <h1 id="heading">Quotes</h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
         <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
-      <!-- </div> -->
-    </div>
-  </div>
-  <div class="row">
-    <!-- <div class="col-md-6"> -->
-      <div class="jumbotron">
-        <div class="well">
-          <div class="quote" *ngFor="let quote of Quotes;let i = 'index'">
-
-            <h4>{{ quote.quote }}</h4>
-            <!-- <h4>Author: {{quote.author}}</h4>
-            <h4>published by: {{quote.publisher}}</h4> -->
-
-
-            <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
-            <br><br>
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
-
-          </div>
-        <!-- </div> -->
+      </div>
+      <hr>
+      <div class="col-md-4">
+        <div class="" *ngFor="let quote of Quotes;let i = 'index'">
+          <h4>{{ quote.quote }}</h4>
+          <app-quotes-details *ngIf="quote.showQuoteDetails;" [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quotes-details>
+          <br><br>
+          <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
-<style media="screen">
-  .quote{
-    background-color: #c2c2d6;
-    text-align: center;
-    border: 0.5px solid black;
-    border-radius: 10px;
-    padding: 10%;
-    margin: 10%;
-  }
-</style>

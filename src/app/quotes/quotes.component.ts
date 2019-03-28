@@ -8,10 +8,10 @@ import { Quote } from '../quote';
 export class QuotesComponent implements OnInit {
 
   Quotes = [
-    new Quote(1, 'Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.', 'Albert Einstein', 'Mohamed Hassan', new Date(2019, 5, 7)),
-    new Quote(2, 'I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.', 'Bill Gates', 'Denzel Ouma', new Date(2019, 0, 3)),
-    new Quote(3, 'The future belongs to those who prepare for it today.', 'Malcolm X', 'Xavi Alonso', new Date(2019, 8, 1)),
-    new Quote(4, 'It always seems impossible until it’s done.', ' Nelson Mandela', 'Alisson Becker', new Date(2019, 1, 9)),
+    new Quote(1, '"Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid."', 'Albert Einstein', 'Mohamed Hassan', new Date(2019, 5, 7)),
+    new Quote(2, '"I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it."', 'Bill Gates', 'Denzel Ouma', new Date(2019, 9, 3)),
+    new Quote(3, '"The future belongs to those who prepare for it today."', 'Malcolm X', 'Xavi Alonso', new Date(2019, 6, 1)),
+    new Quote(4, '"It always seems impossible until it’s done."', ' Nelson Mandela', 'Alisson Becker', new Date(2019, 5, 9)),
   ]
 
   toogleDetails(index) {
